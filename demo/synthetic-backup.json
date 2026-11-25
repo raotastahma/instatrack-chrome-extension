@@ -1,0 +1,210 @@
+{
+  "schema": "instatrack.backup.v1",
+  "exported_at": {
+    "iso": "2026-01-02T12:00:00Z",
+    "epoch": 1767355200
+  },
+  "history": {
+    "version": 1,
+    "created_at": {
+      "iso": "2026-01-01T12:00:00Z",
+      "epoch": 1767268800
+    },
+    "last_snapshot": {
+      "taken_at": {
+        "iso": "2026-01-02T12:00:00Z",
+        "epoch": 1767355200
+      },
+      "instagram_account": "demo.studio",
+      "followers": [
+        "demo.alex",
+        "demo.casey",
+        "demo.ellis"
+      ],
+      "following": [
+        "demo.alex",
+        "demo.drew",
+        "demo.frank"
+      ]
+    },
+    "events": [
+      {
+        "type": "follower_gained",
+        "username": "demo.ellis",
+        "detected_at": {
+          "iso": "2026-01-02T12:00:00Z",
+          "epoch": 1767355200
+        },
+        "run_id": "demo_sync_2"
+      },
+      {
+        "type": "follower_lost",
+        "username": "demo.brook",
+        "detected_at": {
+          "iso": "2026-01-02T12:00:00Z",
+          "epoch": 1767355200
+        },
+        "run_id": "demo_sync_2"
+      },
+      {
+        "type": "following_added",
+        "username": "demo.frank",
+        "detected_at": {
+          "iso": "2026-01-02T12:00:00Z",
+          "epoch": 1767355200
+        },
+        "run_id": "demo_sync_2"
+      },
+      {
+        "type": "following_removed",
+        "username": "demo.casey",
+        "detected_at": {
+          "iso": "2026-01-02T12:00:00Z",
+          "epoch": 1767355200
+        },
+        "run_id": "demo_sync_2"
+      }
+    ],
+    "sync_points": [
+      {
+        "run_id": "demo_sync_1",
+        "taken_at": {
+          "iso": "2026-01-01T12:00:00Z",
+          "epoch": 1767268800
+        },
+        "instagram_account": "demo.studio",
+        "followers_count": 3,
+        "following_count": 3,
+        "changes": {
+          "followers_gained": 0,
+          "followers_lost": 0,
+          "following_added": 0,
+          "following_removed": 0
+        }
+      },
+      {
+        "run_id": "demo_sync_2",
+        "taken_at": {
+          "iso": "2026-01-02T12:00:00Z",
+          "epoch": 1767355200
+        },
+        "instagram_account": "demo.studio",
+        "followers_count": 3,
+        "following_count": 3,
+        "changes": {
+          "followers_gained": 1,
+          "followers_lost": 1,
+          "following_added": 1,
+          "following_removed": 1
+        }
+      }
+    ],
+    "meta": {
+      "instagram_account": "demo.studio",
+      "a_first_detected": {
+        "demo.drew": {
+          "iso": "2026-01-01T12:00:00Z",
+          "epoch": 1767268800
+        },
+        "demo.frank": {
+          "iso": "2026-01-02T12:00:00Z",
+          "epoch": 1767355200
+        }
+      }
+    }
+  },
+  "report": {
+    "generated_at": {
+      "iso": "2026-01-02T12:00:00Z",
+      "epoch": 1767355200
+    },
+    "previous_snapshot_at": {
+      "iso": "2026-01-01T12:00:00Z",
+      "epoch": 1767268800
+    },
+    "instagram_account": "demo.studio",
+    "counts": {
+      "followers": 3,
+      "following": 3,
+      "A": 2,
+      "B": 1,
+      "C": 2,
+      "D": 1,
+      "E": 1
+    },
+    "relationship_breakdown": {
+      "mutual_follows": 1,
+      "following_not_following_back": 2,
+      "followers_i_dont_follow_back": 2
+    },
+    "following_not_following_back": [
+      {
+        "username": "demo.drew",
+        "detected_at": {
+          "iso": "2026-01-01T12:00:00Z",
+          "epoch": 1767268800
+        }
+      },
+      {
+        "username": "demo.frank",
+        "detected_at": {
+          "iso": "2026-01-02T12:00:00Z",
+          "epoch": 1767355200
+        }
+      }
+    ],
+    "unfollowed_me": [
+      {
+        "username": "demo.brook",
+        "detected_at": {
+          "iso": "2026-01-02T12:00:00Z",
+          "epoch": 1767355200
+        }
+      }
+    ],
+    "followers_i_dont_follow_back": [
+      {
+        "username": "demo.casey",
+        "detected_at": {
+          "iso": "2026-01-02T12:00:00Z",
+          "epoch": 1767355200
+        }
+      },
+      {
+        "username": "demo.ellis",
+        "detected_at": {
+          "iso": "2026-01-02T12:00:00Z",
+          "epoch": 1767355200
+        }
+      }
+    ],
+    "i_followed": [
+      {
+        "username": "demo.frank",
+        "detected_at": {
+          "iso": "2026-01-02T12:00:00Z",
+          "epoch": 1767355200
+        }
+      }
+    ],
+    "i_unfollowed": [
+      {
+        "username": "demo.casey",
+        "detected_at": {
+          "iso": "2026-01-02T12:00:00Z",
+          "epoch": 1767355200
+        }
+      }
+    ],
+    "new_followers": [
+      {
+        "username": "demo.ellis",
+        "detected_at": {
+          "iso": "2026-01-02T12:00:00Z",
+          "epoch": 1767355200
+        }
+      }
+    ]
+  },
+  "last_sync": null
+}

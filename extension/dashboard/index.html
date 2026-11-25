@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instagram Followers Tracker Pro</title>
+    <link rel="icon" type="image/png" href="../icons/icon-32.png">
+    <link rel="stylesheet" href="../src/dashboard/dashboard.css">
+    <script type="module" src="../src/dashboard/dashboard.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#dashboard-main">Skip to dashboard content</a>
+    <div class="dashboard-shell">
+      <aside class="sidebar" aria-label="Product navigation">
+        <a class="product-name" href="#overview" aria-label="Instagram Followers Tracker Pro, dashboard home">Instagram<br>Followers<br>Tracker Pro</a>
+        <p class="sidebar-label">Dashboard &amp; Export</p>
+        <nav class="dashboard-nav" aria-label="Dashboard sections">
+          <a href="#overview">Overview</a>
+          <a href="#analytics">Analytics</a>
+          <a href="#reports">Reports</a>
+          <a href="#data-management">Data management</a>
+        </nav>
+        <p class="sidebar-footer">Private by design.<br>Stored in this browser.</p>
+      </aside>
+
+      <main class="dashboard" id="dashboard-main" tabindex="-1">
+        <header class="page-header">
+          <div>
+            <p class="eyebrow">Instagram Analytics Dashboard and Exporter</p>
+            <h1>Instagram Followers Tracker Pro</h1>
+            <p class="account-line" data-account>Instagram account appears after your first sync.</p>
+          </div>
+          <div class="header-meta">
+            <p class="early-access" data-early-access>Free during early access</p>
+            <p class="last-sync-time" data-last-sync-time>No sync recorded yet.</p>
+          </div>
+        </header>
+
+        <div class="live-message visually-hidden" data-live-status role="status" aria-live="polite" aria-atomic="true"></div>
+        <div class="alert-message" data-alert role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+        <div class="review-panel" data-review-panel hidden></div>
+
+        <section class="sync-panel" aria-labelledby="sync-title">
+          <div>
+            <p class="sync-title" id="sync-title">No Instagram password required</p>
+            <p class="sync-description">Sync your logged-in Instagram account.</p>
+            <p class="sync-description">Keep the Instagram tab open and visible until sync finishes.</p>
+          </div>
+          <div class="sync-controls">
+            <p class="sync-state" data-sync-state>Ready for a local sync.</p>
+            <div class="sync-actions">
+              <button class="button button-primary" type="button" data-action="sync" data-focus-target="sync">Sync now</button>
+              <button class="button button-secondary" type="button" data-action="focus-sync" hidden>Return to Instagram</button>
+              <button class="button button-stop" type="button" data-action="stop" data-focus-target="stop-sync" hidden>Stop sync</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="dashboard-section" id="overview" aria-labelledby="overview-title">
+          <div class="section-heading">
+            <div>
+              <h2 id="overview-title">Overview</h2>
+            </div>
+            <p class="section-note">Your latest followers relationship snapshot.</p>
+          </div>
+          <div class="overview-grid" data-overview></div>
+        </section>
+
+        <section class="dashboard-section" id="analytics" aria-labelledby="analytics-title">
+          <div class="section-heading">
+            <div>
+              <h2 id="analytics-title" data-focus-target="history" tabindex="-1">Analytics</h2>
+            </div>
+          </div>
+          <div class="analytics-grid">
+            <article class="analytics-card trend-card" aria-labelledby="trend-title" data-trend></article>
+            <article class="analytics-card breakdown-card" aria-labelledby="breakdown-title" data-breakdown></article>
+          </div>
+        </section>
+
+        <section class="dashboard-section" id="reports" aria-labelledby="reports-title">
+          <div class="section-heading">
+            <div>
+              <h2 id="reports-title" data-focus-target="reports" tabindex="-1">Reports</h2>
+              <p class="reports-explanation">Detected between syncs, not the exact Instagram event time.</p>
+            </div>
+          </div>
+          <div class="report-grid" data-reports></div>
+        </section>
+
+        <section class="dashboard-section data-section" id="data-management" aria-labelledby="data-management-title">
+          <div class="section-heading">
+            <div>
+              <h2 id="data-management-title" data-focus-target="data-management" tabindex="-1">Data management</h2>
+            </div>
+            <p class="section-note">Downloads and backup replacement happen locally in this browser.</p>
+          </div>
+          <div class="data-card" data-data-actions></div>
+        </section>
+        <footer class="dashboard-footer">
+          <p class="privacy-copy">Instagram usernames, relationship lists and reports stay in this browser. With your permission, usage events and sync status codes are sent to Google Analytics. <a href="privacy.html" data-telemetry-action="privacy" target="_blank" rel="noreferrer">Privacy policy</a></p>
+          <p class="privacy-copy"><span data-analytics-status>Optional usage analytics: off.</span> <button type="button" class="text-button" data-analytics-toggle>Manage analytics</button></p>
+          <p class="contact-copy">Questions and suggestions: <a href="mailto:support@example.invalid" data-telemetry-action="contact">support@example.invalid</a> · <a href="https://chromewebstore.google.com/detail/instagram-followers-track/bbjpknpklcpjcogdockeodhieaghbbeb" target="_blank" rel="noreferrer">Chrome Web Store</a></p>
+        </footer>
+      </main>
+    </div>
+
+    <input data-import-file class="visually-hidden" type="file" accept="application/json,.json" tabindex="-1">
+
+    <dialog class="dashboard-dialog" data-analytics-dialog aria-labelledby="analytics-dialog-title" aria-describedby="analytics-dialog-description">
+      <div class="dialog-content">
+        <p class="card-kicker">Optional usage analytics</p>
+        <h2 id="analytics-dialog-title">Help improve the extension?</h2>
+        <p id="analytics-dialog-description">Allow button clicks, dashboard visits, review prompt views and sync status/error codes to be sent to Google Analytics with a random installation ID. Instagram usernames, followers, following lists, reports and error messages are never sent. You can change your choice later in the dashboard footer. Analytics is disabled in Incognito.</p>
+        <p>Your sync works with either choice. <a href="privacy.html" target="_blank" rel="noreferrer">Privacy policy</a></p>
+        <div class="dialog-actions">
+          <button class="button button-secondary" type="button" data-analytics-choice="deny">Continue without analytics</button>
+          <button class="button button-primary" type="button" data-analytics-choice="allow">Allow analytics</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="dashboard-dialog" data-dialog="import" aria-labelledby="import-dialog-title">
+      <div class="dialog-content">
+        <p class="card-kicker">Replace local analytics</p>
+        <h2 id="import-dialog-title">Import this backup?</h2>
+        <p>Replace the history for the account in this backup. Other accounts stay stored.</p>
+        <div class="dialog-actions">
+          <button class="button button-secondary" type="button" data-dialog-cancel="import">Cancel</button>
+          <button class="button button-primary" type="button" data-dialog-confirm="import">Import backup</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="dashboard-dialog" data-dialog="delete-sync" aria-labelledby="delete-sync-title" aria-describedby="delete-sync-description delete-sync-warning">
+      <div class="dialog-content">
+        <p class="card-kicker">Remove a saved sync</p>
+        <h2 id="delete-sync-title">Delete this sync?</h2>
+        <p id="delete-sync-description" data-delete-sync-description></p>
+        <p id="delete-sync-warning">Reports and trend will be recalculated from the remaining syncs. Deleting the only sync clears this account's analytics. Other accounts stay stored. This action cannot be undone.</p>
+        <div class="dialog-actions">
+          <button class="button button-secondary" type="button" data-dialog-cancel="delete-sync">Cancel</button>
+          <button class="button button-danger" type="button" data-dialog-confirm="delete-sync">Delete sync</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="dashboard-dialog" data-dialog="reset" aria-labelledby="reset-dialog-title" aria-describedby="reset-dialog-copy reset-dialog-warning">
+      <div class="dialog-content">
+        <p class="card-kicker">Destructive action</p>
+        <h2 id="reset-dialog-title">Reset all local data?</h2>
+        <p id="reset-dialog-copy">This stops any active sync and permanently removes the history, reports, and latest sync diagnostics for every Instagram account stored by this extension in this browser.</p>
+        <p id="reset-dialog-warning">Downloaded CSV and JSON files stay on your device. Your usage analytics preference is kept; change it in the dashboard footer. This action cannot be undone.</p>
+        <div class="dialog-actions">
+          <button class="button button-secondary" type="button" data-dialog-cancel="reset">Cancel</button>
+          <button class="button button-danger" type="button" data-dialog-confirm="reset">Reset all data</button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>

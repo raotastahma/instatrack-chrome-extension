@@ -1,0 +1,11 @@
+{
+  "name": "followers-tracker-pro-extension",
+  "private": true,
+  "version": "0.1.9",
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node --test test/*.test.mjs",
+    "package": "node scripts/package.mjs"
+  }
+}

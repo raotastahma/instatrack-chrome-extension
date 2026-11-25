@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy | Instagram Followers Tracker Pro</title>
+    <meta name="description" content="How Instagram Followers Tracker Pro stores relationship data locally and handles optional Google Analytics usage events, consent and deletion.">
+    <link rel="canonical" href="https://extension.example.invalid/privacy">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Privacy Policy | Instagram Followers Tracker Pro">
+    <meta property="og:description" content="Local Instagram relationship data, optional usage analytics and your controls.">
+    <meta property="og:url" content="https://extension.example.invalid/privacy">
+    <style>
+      body { margin: 32px 20px; color: #090e1f; background: #fff; font: 16px/1.6 system-ui, sans-serif; }
+      main { max-width: 72ch; margin: auto; }
+      h1, h2 { line-height: 1.2; }
+      h2 { margin-top: 32px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Instagram Followers Tracker Pro Privacy Policy</h1>
+      <p>Last updated: October 15, 2026.</p>
+      <p><a href="https://extension.example.invalid">About the extension and frequently asked questions</a></p>
+      <p>Instagram Followers Tracker Pro processes Instagram relationship data locally to show follower and following analytics for your own signed-in account.</p>
+      <h2>Data the extension handles</h2>
+      <p>When you start a sync, the extension reads your account username and follower and following usernames from Instagram pages. It uses these lists to create relationship snapshots, detected changes, reports, and chart history. It also stores sync timestamps, stages, duration, counts, and the latest error when present.</p>
+      <p>The extension uses your existing Instagram browser session. It does not ask for or read your password, authentication cookies, or session tokens. It does not collect email addresses, payment information, or browsing history outside the Instagram pages needed for these features.</p>
+      <h2>Storage and sharing</h2>
+      <p>Instagram usernames, follower and following lists, snapshots, relationship history, reports and backups are stored in this Chrome profile using local extension storage. These data are not sent to the developer or to an extension backend. There is no advertising or cloud backup.</p>
+      <p>Instagram continues to handle the normal page requests made by your browser during sync. Those requests are governed by Instagram's policies.</p>
+      <h2>Optional usage analytics</h2>
+      <p>Starting with version 0.1.7, you can choose to allow usage analytics to help the developer understand which features work and where syncs fail. It is off until you allow it and is always disabled in Incognito. Versions up to 0.1.6 do not send usage analytics.</p>
+      <p>If you allow analytics, the extension sends dashboard openings, review request views and clicks, button action names, sync stages and outcomes, and predefined error codes. It sends a random installation identifier and a session identifier to measure repeat visits and retention. Neither identifier is linked to your Instagram username. Repeated sync-stage messages are counted once per stage per sync. No Instagram usernames, relationship lists, follower counts, report or backup contents, raw error messages, passwords, cookies or session tokens are included.</p>
+      <p>Events go over HTTPS through the developer's event relay at extension.example.invalid (and the compatible telemetry.example.invalid endpoint used by version 0.1.7) to Google Analytics 4. The relay does not maintain an event database or intentionally log event payloads. Hosting providers necessarily process connection metadata such as IP addresses to deliver and secure requests; this metadata is not forwarded as an analytics event parameter. Google processes event data under its own privacy policy. Advertising personalization and advertising user-data consent are denied. The extension does not load a remote Google Analytics script.</p>
+      <p>Measurement is best effort: offline use, interrupted requests and disabled analytics are not fully represented. Counts describe participating browser installations, not identified people. Analytics does not run in Incognito.</p>
+      <p><a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
+      <h2 id="website-analytics">Product website analytics</h2>
+      <p>The product page at extension.example.invalid uses a Google tag to measure website visits in Google Analytics 4. It sends page views and standard browser, device and referral information directly to Google, and may use analytics cookies to distinguish browsers and sessions. This website measurement is separate from the extension's optional usage analytics and its dashboard preference. Advertising storage, advertising user data and advertising personalization are denied, and Google signals are disabled. Browser privacy settings and content blockers may prevent website measurement.</p>
+      <h2>Your controls and retention</h2>
+      <p>Sync is manual. You can stop it and keep the last successful analytics. Data remains in local extension storage until you reset it, replace it by importing a backup, clear the Chrome profile's extension data, or uninstall the extension.</p>
+      <p>Report and backup downloads create CSV or JSON files on your device. Importing a backup requires confirmation before it replaces local analytics. Reset all data stops active sync and deletes the extension's local history, reports, and latest sync diagnostics. It does not delete files you previously downloaded.</p>
+      <p>Downloaded files may contain account and relationship usernames. Anyone you share these files or your Chrome profile with may be able to read them. The extension does not add password protection to exports or local storage.</p>
+      <p>You can turn usage analytics on or off in the dashboard footer. Turning it off clears the local analytics identifier, session and sync deduplication state and stops future events. If you allow it again, a new random identifier is created. Reset all data clears Instagram relationship data and sync diagnostics; it preserves your analytics preference. Uninstalling removes the local preference and identifier. These actions do not delete events already delivered to Google Analytics. Contact the developer for privacy questions or data-deletion requests; an Instagram username cannot identify a pseudonymous analytics installation.</p>
+      <h2>Limited use</h2>
+      <p>Instagram data is used only for the relationship analytics and local data-management features you request. Optional usage events are used to measure product usage and improve reliability. Data is not sold or used for advertising. This use of data adheres to the Chrome Web Store User Data Policy, including its Limited Use requirements.</p>
+      <p><a href="https://chromewebstore.google.com/detail/instagram-followers-track/bbjpknpklcpjcogdockeodhieaghbbeb">View the extension on the Chrome Web Store</a></p>
+      <p>Questions and suggestions: <a href="mailto:support@example.invalid">support@example.invalid</a></p>
+    </main>
+  </body>
+</html>
