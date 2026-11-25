@@ -1,6 +1,6 @@
 # Verification
 
-Checked on 2026-11-25 using Node.js 24 on macOS.
+Checked on 2026-11-25 using Node.js 25.9 on macOS.
 
 | Check | Primary baseline | Portfolio copy |
 |---|---|---|
