@@ -1,7 +1,8 @@
-# InstaTrack Extension
+# InstaTrack Chrome Extension
 
-<img src="extension/icons/icon-128.png" alt="InstaTrack" width="96">
-
+<p align="center">
+  <img src="extension/icons/icon-128.png" alt="InstaTrack" width="96">
+</p>
 
 A Chrome Manifest V3 extension for comparing manually collected Instagram follower and following lists. I built the extension with AI assistance, including the dashboard, local data model, collection workflow and automated tests.
 
@@ -38,7 +39,8 @@ Open `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and
 
 ## Structure
 
-- `extension/src/content`: Instagram page collection and progress handling.
+Start with [instagram.js](extension/src/content/instagram.js) to follow how the extension collects follower and following lists in an Instagram tab. The [Manifest V3 configuration](extension/manifest.json) tells Chrome when to load that script and registers the [background service worker](extension/src/background/service-worker.js). The [analytics module](extension/src/domain/analytics.js) compares saved lists across syncs.
+
 - `extension/src/background`: account isolation, local persistence, sync coordination and telemetry consent.
 - `extension/src/domain`: normalization, relationship deltas, history, report and backup validation.
 - `extension/src/dashboard`: accessible dashboard and local import/export controls.
