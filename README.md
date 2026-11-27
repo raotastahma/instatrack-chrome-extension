@@ -1,8 +1,17 @@
 # InstaTrack Extension
 
+<img src="extension/icons/icon-128.png" alt="InstaTrack" width="96">
+
+
 A Chrome Manifest V3 extension for comparing manually collected Instagram follower and following lists. I built the extension with AI assistance, including the dashboard, local data model, collection workflow and automated tests.
 
-The source includes the complete extension runtime, test suite, packaging scripts, an optional telemetry relay and an entirely fictional offline demo. Account histories remain in browser-local storage. Manual synchronization depends on Instagram's current page structure and an authenticated user session; this repository does not claim official Instagram support or guarantee future compatibility.
+The source includes the complete extension runtime, test suite, packaging scripts, an optional telemetry relay and an offline walkthrough with sample account lists. Account histories remain in browser-local storage. Manual synchronization depends on Instagram's current page structure and an authenticated user session; this repository does not claim official Instagram support or guarantee future compatibility.
+
+## Track changes in Chrome
+
+1. [Install Instagram Followers Tracker Pro from the Chrome Web Store](https://chromewebstore.google.com/detail/instagram-followers-track/bbjpknpklcpjcogdockeodhieaghbbeb) and sign in to Instagram in the same Chrome profile.
+2. Open the extension from Chrome’s toolbar and choose **Sync now**. The first sync saves your starting follower and following lists locally.
+3. Run **Sync now** again later. Open the dashboard to see which accounts have joined or left each list since the previous sync.
 
 ## Try the offline demo
 
